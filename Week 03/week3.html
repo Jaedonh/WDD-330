@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Week 3 Readings</h1>
+    </header>
+    <section>
+        <h2>Notes</h2>
+        <ul>
+            <li>
+                <h3><em>Object Methods</em></h3>
+                <ul>
+                    <li>Objects are usually created to represented entities of the real world, like user or so on</li>
+                    <li>Objects are given actions in the form of functions to represent real world actions</li>
+
+                </ul>
+            </li>
+            <li>
+                <h3><em>Chapter 5: Objects</em></h3>
+                <ul>
+                    <h4>Object Literals</h4>
+                    <ul>
+                        <li>An object is a self-contained set of related values and functions</li>
+                        <li>If a properties value is a function known as a method</li>
+                        <li>Objects are often used to keep related information and functions grouped together</li>
+                        <li></li>
+                    </ul>
+                    <h4>Creating Objects</h4>
+                    <ul>
+                        <li>To create an object you use {}</li>
+                        <li>To create a constructor object you have to use the keywords <em>new Object()</em></li>
+                        <li>You can assign an object to a variable like this: <em>const</em> spiderman = new Object();</li>
+                        <li>You can access an object's properties by doing either <b>spiderman.property</b> or <b>spiderman['property']</b></li>
+                    </ul>
+                    <h4>Calling Methods</h4>
+                    <ul>
+                        <li>Calling an object method, you use the dot or bracket method</li>
+                        <li>Calling a method is the same as calling a function</li>
+                        <li>You can check if a property or method exits in an object by using in, ex: 'city' in superman; this may return false or true depending on if the method or property exists</li>
+                        <li>You can loop trough all the properties of a object by using the statement <em>for in</em></li>
+                    </ul>
+                    <h4>Object Modification</h4>
+                    <ul>
+                        <li>You can add an property by using the dot method like so, superman.city = 'Metropolis'</li>
+                        <li>You can modify properties like so, superman['real name'] = 'Kal-El'</li>
+                        <li>You can remove a porperty by using the keyword <em>delete</em>, delete superman.fly</li>
+                        <li>You can nest objects in another object and then access by adding onto the previous dot or bracket statement, jla.flash.realName</li>
+                        <li>You can mix different notation like this, jla.aquaman['realName']</li>
+                        <li>You can clone objects like this, const cloneThor = thor;</li>
+                    </ul>
+                    <h4>Built-in Objects and Character Groups</h4>
+                    <ul>
+                        <li>Built-In objects and methods exist in JavaScript such as the Math object or JSON</li>
+                        <li>Characters can be thrown together in a group inside square brackets []</li>
+                        <li>You can use dashes to represent things like [a-z] or [0-9]</li>
+                        <li>You can test patters like the following example<br> pattern = /[Jj][aeiou]v[aeiou]/;<br>
+                            << /[Jj][aeiou]v[aeiou]/<br><br> pattern.test( 'JavaScript');<br>
+                                << true<br><br> pattern.test( 'jive');<br>
+                                    << true<br><br> pattern.test( 'hello');<br> c
+                                        << false </li>
+                    </ul>
+                    <h3><em>Chapter 6: The Document Object Model</em></h3>
+                    <h4>The DOM</h4>
+                    <ul>
+                        <li>The DOM allows you to access parts of the web page and allow you to interact by modifying elements</li>
+                        <li>The DOM treats everything on the web page as a node on a tree</li>
+                        <li>The DOM is not apart of JavaScript but can be used with any programming language, though JavaScript has a built in object to interact called <em>document</em></li>
+                    </ul>
+                    <h4>History of DOM</h4>
+                    <ul>
+                        <li>The web has developed along th way and the method to interact was standardized by W3C to create the DOM level 1 which would eventually be updated to the current DOM</li>
+                    </ul>
+                    <h4>Getting Elements</h4>
+                    <ul>
+                        <li>To access pieces of the the page you can use the dot method like so, doucment.body</li>
+                        <li>If you are curious what type of node it is you can use the following dot method on any part of the page, body.nodeType;</li>
+                        <li>Doing that will return a number which signifies what type of node it is</li>
+                        <li>The numbers represent the following:<br> 1, An element<br> 2, An attribute<br> 3, Text<br> 8, A comment<br> 9, Body</li>
+                        <li>You can use the following to find the node type name, body.nodeName;</li>
+                    </ul>
+
+                    </li>
+                </ul>
+    </section>
+</body>
+
+</html>
